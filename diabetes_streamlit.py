@@ -20,12 +20,12 @@ with st.form("diabetes_prediction_form"):
     
     with col1:
         age = st.slider("Age", 18, 85, 40)
-        bmi = st.number_input("BMI", 18.0, 45.0, 24.5)
-        bp = st.number_input("Blood Pressure", 70.0, 150.0, 110.0)
+        bmi = st.number_input("BMI", 15.0, 45.0, 24.5)
+        bp = st.number_input("Blood Pressure", 50.0, 170.0, 120.0)
 
     with col2:
         glucose = st.number_input("Glucose Level", 70.0, 250.0, 120.0)
-        exercise = st.slider("Exercise Time (min/day)", 30, 180, 60)
+        exercise = st.slider("Exercise Time (min/week)", 0, 1260, 120)
         stress = st.slider("Stress Level (1-10)", 1, 10, 5)
 
     submit = st.form_submit_button("Predict Diabetes Score")
